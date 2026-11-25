@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Accessible Gallery</title>
+  <style>
+    #image {
+      width: 500px;
+      height: 300px;
+      border: 2px solid black;
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-size: 24px;
+      text-align: center;
+      line-height: 300px;
+      background-color: #555;
+    }
+    .preview {
+      width: 150px;
+      height: 100px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body onload="addTabindex()">
+  <h1>My Accessible Gallery</h1>
+
+  <div id="image">Hover over an image below to display here.</div>
+
+  <img class="preview" src="images/anh1.jpg" alt="Goat"
+       onmouseover="upDate(this)" onmouseout="unDo()"
+       onfocus="upDate(this)" onblur="unDo()">
+  <img class="preview" src="images/anh2.jpg" alt="Siuuuu"
+       onmouseover="upDate(this)" onmouseout="unDo()"
+       onfocus="upDate(this)" onblur="unDo()">
+  <img class="preview" src="images/anh3.jpg" alt="Cristiano Ronaldo in a red Manchester United shirt pointing to the sky"
+       onmouseover="upDate(this)" onmouseout="unDo()"
+       onfocus="upDate(this)" onblur="unDo()">
+  <img class="preview" src="images/anh4.jpg" alt="CR7"
+       onmouseover="upDate(this)" onmouseout="unDo()"
+       onfocus="upDate(this)" onblur="unDo()">
+  <img class="preview" src="images/anh5.jpg" alt="Respect"
+       onmouseover="upDate(this)" onmouseout="unDo()"
+       onfocus="upDate(this)" onblur="unDo()">
+  <img class="preview" src="images/anh6.jpg" alt="Goat&&Goat"
+       onmouseover="upDate(this)" onmouseout="unDo()"
+       onfocus="upDate(this)" onblur="unDo()">
+
+  <script src="script.js"></script>
+</body>
+</html>
